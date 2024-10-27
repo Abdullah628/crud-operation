@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "1fe9d27b-62f9-402e-9520-d7935918a6b6",
+		"name": "CRUD-OPERATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38763211"
+	},
+	"item": [
+		{
+			"name": "getAllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wesoftin-backend.vercel.app/users?sort=desc",
+					"protocol": "https",
+					"host": [
+						"wesoftin-backend",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSingleUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wesoftin-backend.vercel.app/users/651045be973d17128afefd95",
+					"protocol": "https",
+					"host": [
+						"wesoftin-backend",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"651045be973d17128afefd95"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Md. Amdad\",\r\n  \"image\": \"https://i.ibb.co.com/NLVbXxj/user.png\",\r\n  \"age\": 23,\r\n  \"nationality\": \"Bangladeshi\",\r\n  \"skills\": [\r\n    \"JavaScript\",\r\n    \"TypeScript\",\r\n    \"React\",\r\n    \"Next.Js\",\r\n    \"Express.Js\",\r\n    \"MongoDB\",\r\n    \"MySQL\",\r\n    \"Redux\"\r\n  ],\r\n  \"nid\": \"5555555558756\",\r\n  \"address\": \"GP/Ga-56/9, Mohakhali, Dhaka-1212, Bangladesh\",\r\n  \"email\": \"amdad@gmail.com\",\r\n  \"phone\": \"+8801751589087\",\r\n  \"website\": \"https://emon3455.netlify.app/\",\r\n  \"gender\": \"MALE\",\r\n  \"educationalQualifications\": {\r\n    \"degree\": \"Bachelor of Science in Computer Science And Engineering\",\r\n    \"university\": \"State University\",\r\n    \"session\": \"2020-2024\",\r\n    \"cgpa\": 3.75\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wesoftin-backend.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"wesoftin-backend",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://wesoftin-backend.vercel.app/users/6706041acd345fa5aecdf308",
+					"protocol": "https",
+					"host": [
+						"wesoftin-backend",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6706041acd345fa5aecdf308"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Amdadullah Updated\",\r\n  \"image\": \"https://i.ibb.co.com/NLVbXxj/user.png\",\r\n  \"age\": 24,\r\n  \"nationality\": \"Bangladeshi\",\r\n  \"skills\": [\r\n    \"JavaScript\",\r\n    \"TypeScript\",\r\n    \"React\",\r\n    \"Next.Js\",\r\n    \"Express.Js\",\r\n    \"MongoDB\",\r\n    \"MySQL\",\r\n    \"Redux\",\r\n    \"Python\"\r\n  ],\r\n  \"nid\": \"123456789\",\r\n  \"address\": \"Updated Address, Dhaka, Bangladesh\",\r\n  \"email\": \"updated.amdad@gmail.com\",\r\n  \"phone\": \"+8801712345678\",\r\n  \"website\": \"https://updatedsite.com/\",\r\n  \"gender\": \"MALE\",\r\n  \"educationalQualifications\": {\r\n    \"degree\": \"Bachelor of Science in Computer Science And Engineering\",\r\n    \"university\": \"State University of Bangladesh\",\r\n    \"session\": \"2020-2024\",\r\n    \"cgpa\": 3.90\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wesoftin-backend.vercel.app/users/6706041acd345fa5aecdf308",
+					"protocol": "https",
+					"host": [
+						"wesoftin-backend",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6706041acd345fa5aecdf308"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
