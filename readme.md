@@ -7,7 +7,6 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Running the Backend](#running-the-backend)
 - [Running the Frontend](#running-the-frontend)
 
 - [Technologies Used](#technologies-used)
@@ -21,7 +20,7 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 
 ## Prerequisites
 
-- **Node.js** and **npm** installed
+- **React** and **npm** installed
 
 - Git for version control
 
@@ -30,5 +29,4 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+npm run dev
